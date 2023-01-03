@@ -14,7 +14,10 @@
 ```
 
 >>2. How to (如何使用)
-    ./check_IP_range.sh -c "subnet/mask" -f {file path of ip list }
+```
+    Example : ./check_IP_range.sh -c "subnet/mask" -f {file path of ip list }
+```
+
     如果IP_list 中ip 有隸屬指定subnet 時：
 ```
     ./check_IP_range.sh -c "10.0.1.0/24" -f ./IP_list
@@ -23,7 +26,7 @@
     10.0.1.23
 ```
 
-如果IP_list 中ip 無隸屬指定subnet 時：
+    如果IP_list 中ip 無隸屬指定subnet 時：
 ```
     ./check_IP_range.sh -c "10.0.99.0/24" -f ./IP_list
     There are no any ip list in (./IP_list) in the 10.0.99.0/24
