@@ -18,21 +18,20 @@
     Example : ./check_IP_range.sh -c "subnet/mask" -f {file path of ip list }
 ```
 
-    如果IP_list 中ip 有隸屬指定subnet 時：
+>>>2.a 如果IP_list 中ip 有隸屬指定subnet 時：
 ```
     ./check_IP_range.sh -c "10.0.1.0/24" -f ./IP_list
     ===================
     The ip belong specifc subnet (10.0.1.0/24) as below : 
     10.0.1.23
 ```
-
-    如果IP_list 中ip 無隸屬指定subnet 時：
+>>>2.b 如果IP_list 中ip 無隸屬指定subnet 時：
 ```
     ./check_IP_range.sh -c "10.0.99.0/24" -f ./IP_list
     There are no any ip list in (./IP_list) in the 10.0.99.0/24
 ```
 
-    如果缺少指定參數時：
+>>>2.c 如果缺少指定參數時：
 ```
     ./check_IP_range.sh -c "10.0.99.0/24"             
     Some or all of the parameters are empty
